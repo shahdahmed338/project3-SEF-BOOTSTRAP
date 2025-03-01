@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/all.css" />
 
@@ -14,422 +16,744 @@
 
 <body>
  
-  <!-- sec header -->
-   <div class="header">
-    <div class="title-header">
-  <img src="https://i.pinimg.com/736x/00/7c/ee/007ceea87d43a193b297c997685857a4.jpg" alt="">
-     <p>Elegance <span>Home</span></p>
-    </div><!-- /title-header -->
-    <ul class="list">
-     <li class="li"> <a href="#" class="nav">Home</a></li>
-     <li class="li"> <a href="#"   class="nav">Rooms</a></li>
-     <li class="li"> <a href="#"  class="nav">Accessories</a></li>
-     <li class="li"> <a href="#"  class="nav">Furniture</a></li>
-     <li class="li"> <a href="#" class="nav">Lighting</a></li>
-     <li class="li"> <a href="#"  class="nav">pages<i class="fas fa-chevron-down dropdown"></i>
-          <div class="selector">
-            <ul class="pages">
-              <li class="h">pages</li>
-              <li>login</li>
-              <li>Cart</li>
-              <li>Product Details</li>
-              <li>Product Checkout</li> 
-            </ul>
-            <ul class="blog">
-              <li class="h h2">Blog</li>
-              <li>Element</li>
-              <li>Blog Details</li>
 
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
+    <div class="container-fluid" style="font-size: 20px;" >
+      <img src="https://c8.alamy.com/comp/H60XEB/the-word-egypt-concept-and-theme-painted-in-watercolor-ink-on-a-white-H60XEB.jpg " alt="">
+      <a class="navbar-brand" href="#">Egypt</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span>T</span>rips</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Alex</a></li>
+              <li><a class="dropdown-item" href="#">Cairo</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Luxor</a></li>
+              <li><a class="dropdown-item" href="#">Aswan</a></li>
+              <li><a class="dropdown-item" href="#">Sharm Elshik</a></li>
+              <li><a class="dropdown-item" href="#">El Glala</a></li>
+              <li><a class="dropdown-item" href="#">MORE...</a></li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ">About</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-submit  text-dark" type="submit ">Search</button>
+          <button type="button" class="btn btn-submit text-dark ms-3" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+
+          <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"data-bs-backdrop="false">
+            <div class="modal-dialog ">
+              <div class="modal-content" style="text-align: left; direction: ltr;">
+                <div class="modal-header" style="background-color: #A27B5c; color: white;">
+                  <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                  <form>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" >
+                      <small class="text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                      <p>Remember me</p>
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="margin-left: 300px;">Close</button>
+                    <button type="submit" class="btn btn-secondary ">Login</button>
+                    
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
-        </a>
-    </li>
-     <li class="li"> <a href="#"  class="nav">Contact</a></li>
-    </ul><!-- /list -->
-    <div class="icon-head">
-      <i class="fas fa-search"></i>
-      <i class="fas fa-user"></i>
-    
-        <i class="fas fa-shopping-cart cart-icon"></i>
-        <span>2</span>
-     
-    </div><!-- /icon-head -->
-   </div><!-- /header -->
+       
+        </form>
+      </div>
+    </div>
+  </nav>
 
-<div class="offer">
-  <span>Sale Up to 50% Biggest Discounts.Hurry!Limited Period Offer</span>
-  <a href="">Shop Now</a>
-</div><!-- /offer -->
-
-<div class="shop">
-  <div class="shop-overlay">
-    <div class="shop-content">
-    <h2 class="shop-title">Home Decor</h2>
-    <h2 class="shop-subtitle">transform your space into art</h2>
-    <p class="shop-p">Elevate your home with our carefully curated collection of modern and elegant decor pieces.</p>
-    <button class="shop-btn">Shop Now</button>
-  </div><!-- /shop-content -->
-  </div><!-- /shop-overlay -->
-</div><!-- /shop -->
-
-
-
-<div class="container-cat">
-<div class="content-cat">
-<div class="item-cat">
-<div class="item-info">
-<h2>Lighting</h2>
-<a href="#">Shop Now</a>
-</div><!-- /item-info -->
-</div><!-- /item-cat -->
-
-<div class="item-cat cat2">
-  <div class="item-info">
-    <h2>Lighting</h2>
-    <a href="#">Shop Now</a>
-    </div><!-- /item-info -->
-  </div><!-- /item-cat -->
-
-  <div class="item-cat cat3">
-    <div class="item-info">
-      <h2>Lighting</h2>
-      <a href="#">Shop Now</a>
-      </div><!-- /item-info -->
-    </div><!-- /item-cat -->
-</div><!-- /content-cat -->
-</div><!--/container-cat  -->
-
-
-<div class="trending-section">
-  <h2>Trending This Week</h2>
-  <div class="tabs">
-      <span class="tab">Rooms</span>
-      <span class="tab active">Lighting</span>
-      <span class="tab">Tablohs</span>
-      <span class="tab">Fashion</span>
+  <div class="social-sidebar">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+    <a href="#"><i class="fab fa-twitter-square"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
   </div>
+<!-- carousel -->
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://i.pinimg.com/736x/77/83/5a/77835ab50187c26818b72059dd7c0d48.jpg" class="d-block w-100 " alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="fs-1">Cairo</h2>
+          <p>We had such a great time in egypt!</p>
+          <button class="btn btn-carousel ">Visit Us</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/736x/24/5a/41/245a416f21035aeed9e3059d65592c59.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="fs-1">Aswan</h2>
+          <p>The Jewel of Southern Egypt.</p>
+          <button class="btn btn-carousel ">Visit Us</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/736x/fb/35/77/fb357714c8d37a1bc3b104e61ea832d5.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="fs-1">Sharm elsheikh</h2>
+          <p>We love this city.</p>
+          <button class="btn btn-carousel ">Visit Us</button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://cdn.britannica.com/08/178108-050-F19D0A38/statues-entrance-Ramses-II-Luxor-temple-complex.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="fs-1">Luxor</h2>
+          <p>We love this city.</p>
+          <button class="btn btn-carousel ">Visit Us</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<div class="welcome">
+  <h1 class="title-welcome">Welcome</h1>
+  <p class="text-light">Are you planning to visit egypt? we offer to ultimate tour in Egypt covering Cairo,Alex from a one day trip to a 10 days dream vocation ,we will take care of all your needs hotels <br> 24/7 customer services.</p>
+  <button class="btn ">Learn more</button>
 </div>
 <hr>
+
+<!-- accordion -->
+<div class="destination p-4">
+  <h2 class="text-center text-light" ">Popular destination in Egypt</h2>
+</div>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </div>
+  </div>
+</div>
+<!-- translate -->
+<div class="translate  p-4">
+  <h2 class="title-translate text-center">Translate from Arabic to English</h2>
+</div>
+
+<div class="copy p-4">
+  <div class="copy-content mx-4">
+  <span class="text-light fs-4">Write and Translate</span><span>  Press Here</span>
+
+<div class="maodal">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-copy " data-bs-toggle="modal" data-bs-target="#exampleModal">Copy</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+       تم نسخ النص
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="mb-3 mt-3">
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4">Translate:</textarea>
+  </div>
+</div>
+</div>
+
+<hr>
+<div class="translate  p-4">
+  <h2 class="title-translate text-center">Translate from Arabic to French</h2>
+</div>
+
+<div class="copy p-4">
+  <div class="copy-content mx-4">
+  <span class="text-light fs-4">Write and Translate</span><span>  Press Here</span>
+
+<div class="maodal">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-copy " data-bs-toggle="modal" data-bs-target="#exampleModal">Copy</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+       تم نسخ النص
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="mb-3 mt-3">
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4">Translate:</textarea>
+  </div>
+</div>
+</div>
+
+
+
+<hr>
+<div class="translate  p-4">
+  <h2 class="title-translate text-center">Translate from Arabic to German</h2>
+</div>
+
+<div class="copy p-4">
+  <div class="copy-content mx-4">
+  <span class="text-light fs-4">Write and Translate</span><span>  Press Here</span>
+
+<div class="maodal">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-copy " data-bs-toggle="modal" data-bs-target="#exampleModal">Copy</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+       تم نسخ النص
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="mb-3 mt-3">
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4">Translate:</textarea>
+  </div>
+</div>
+</div>
+<hr>
+<!-- img 1 -->
+ <div class="img1 ">
+  <div class="img1-overlay"></div>
+ </div>
+ <div class="destination p-4">
+  <h2 class="text-center text-light">Popular destination in Egypt</h2>
+</div>
+
+
+<div class="container mt-5">
+  <div class="row g-4"> <!-- إضافة تباعد بين البطاقات -->
+    
+    <div class="col-lg-4 col-md-6 col-12">
+      <div class="card">
+        <div class="container-img">
+          <img src="https://i.pinimg.com/736x/02/46/cf/0246cf5085d39d97adaf2a953a4129cd.jpg" class="card-img-top img-fluid" alt="Cairo Tourism">
+        </div>    
+        <div class="card-body  p-3">
+          <h5 class="card-title">CAIRO</h5>
+          <p class="card-text">Capital of Egypt</p>
+          <button class="btn know-more-btn btn-primary">Know More</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6 col-12">
+      <div class="card">
+        <div class="container-img">
+          <img src="https://i.pinimg.com/736x/ed/c3/23/edc323eaa1241f6a824b8586ac2de111.jpg" class="card-img-top img-fluid" alt="Alexandria Tourism">
+        </div>    
+        <div class="card-body ">
+          <h5 class="card-title">ALEXANDRIA</h5>
+          <p class="card-text">The bride of Mediterranean</p>
+          <button class="btn know-more-btn btn-secondary">Know More</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6 col-12">
+      <div class="card">
+        <div class="container-img">
+          <img src="https://i.pinimg.com/736x/9a/a0/39/9aa039ff9d98fccdcc1da27cdfee9918.jpg" class="card-img-top img-fluid" alt="Luxor Tourism">
+        </div>    
+        <div class="card-body ">
+          <h5 class="card-title">LUXOR</h5>
+          <p class="card-text">The Capital of Kingdom</p>
+          <button class="btn know-more-btn btn-success">Know More</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  <div class="container mt-5">
+    <div class="row g-4"> 
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="card">
+          <div class="container-img">
+            <img src="https://i.pinimg.com/736x/04/38/53/043853314c6e6e08f8f27ed443013684.jpg" class="card-img-top img-fluid" alt="Sinai Tourism">
+          </div>    
+          <div class="card-body ">
+            <h5 class="card-title">SINAI</h5>
+            <p class="card-text">Mount Sinai in Egypt sunrise</p>
+            <button class="btn know-more-btn btn-primary">Know More</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="card">
+          <div class="container-img">
+            <img src="https://i.pinimg.com/736x/c7/e9/c5/c7e9c57c1babb80bb82f2a2f642eeb24.jpg" class="card-img-top img-fluid" alt="Sharm El Sheikh">
+          </div>    
+          <div class="card-body ">
+            <h5 class="card-title">SHARM </h5>
+            <p class="card-text">The bride of the Red Sea</p>
+            <button class="btn know-more-btn btn-secondary ">Know More</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="card">
+          <div class="container-img">
+            <img src="https://i.pinimg.com/736x/9a/a0/39/9aa039ff9d98fccdcc1da27cdfee9918.jpg" class="card-img-top img-fluid" alt="Luxor Tourism">
+          </div>    
+          <div class="card-body ">
+            <h5 class="card-title">LUXOR</h5>
+            <p class="card-text">The Capital of Kingdom</p>
+            <button class="btn know-more-btn btn-success">Know More</button>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  <div class="container mt-5">
+    <div class="row g-4"> <!-- تباعد تلقائي بين البطاقات -->
+      
+      <div class="col-lg-6 col-md-6 col-12">
+        <div class="card">
+          <div class="container-img">
+            <img src="https://i.pinimg.com/736x/04/38/53/043853314c6e6e08f8f27ed443013684.jpg" class="card-img-top img-fluid" alt="Sinai Tourism">
+          </div>    
+          <div class="card-body ">
+            <h5 class="card-title">SINAI</h5>
+            <p class="card-text">Mount Sinai in Egypt sunrise</p>
+            <button class="btn know-more-btn btn-primary">Know More</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 col-md-6 col-12">
+        <div class="card">
+          <div class="container-img">
+            <img src="https://i.pinimg.com/736x/c7/24/e2/c724e2a032a98c9a6873169c0b21bd03.jpg" class="card-img-top img-fluid" alt="Siwa Salt Lake">
+          </div>    
+          <div class="card-body ">
+            <h5 class="card-title">SIWA</h5>
+            <p class="card-text">Siwa Salt Lake</p>
+            <button class="btn know-more-btn btn-secondary">Know More</button>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+<div class="img2 my-3">
+  <div class="img1-overlay"></div>
+ </div>
+<hr>
+<div class="destination des2 p-4">
+  <h2 class="text-center  thanks">THANKS FOR</h2>
+</div>
+
+
+<div class="container ">
+  <div class="thanks-content  my-5 d-flex  justify-content-between ">
+    <div class="thanks-item position-relative text-light " >
+      <div class="thanks-overlay ">
+        <div class="overlay-content m-3 " style="transition: 2s; color:#F8F5E9;  ">
+          <h3 >All thanks And appreciation</h3>
+       <div >
+        <i class="far fa-clock"></i>     
+        <span>Febraury23.2025</span>
+       </div>
+       <div >
+        <img src="./images/team img 2.avif" style="width: 90px; height: 100px; border-radius: 50%; border: 2px solid white; margin-top: 160px;">
+        <p >ENG:Shahd Ahmed</p>
+        <p>Front-end devloper</p>
+      </div>
+        </div>
+      </div>
+    </div>
+     <div class="thanks-item position-relative text-light item2">
+      <div class="thanks-overlay ">
+        <div class="overlay-content m-3" style="transition: 2s; color:#F8F5E9;">
+          <h3 >All thanks And appreciation</h3>
+       <div >
+        <i class="far fa-clock"></i>
+        <span>Febraury23.2025</span>
+       </div>
+       <div >
+        <img src="./images/img 3 new.jpg" style="width: 90px; height: 100px; border-radius: 60%; border: 2px solid white; margin-top: 160px;">
+        <p >ENG:Shahd Ahmed</p>
+        <p>Front-end devloper</p>
+      </div>
+        </div>
+      </div>
+    </div>
+    <div class="thanks-item position-relative text-light item3 ">
+      <div class="thanks-overlay ">
+        <div class="overlay-content m-3" style="transition: 2s; color:#F8F5E9;">
+          <h3 >All thanks And appreciation</h3>
+       <div >
+        <i class="far fa-clock"></i>    
+        <span>Febraury23.2025</span>
+       </div>
+       <div>
+        <img src="./images/team img 3.jpg" style="width: 90px; height: 100px; border-radius: 60%; border: 2px solid white; margin-top: 160px;">
+        <p >ENG:Shahd Ahmed</p>
+        <p>Front-end devloper</p>
+      </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div> 
+<h2 class="text-center  thanks join mb-5">Egypt News</h2>
 
 <div class="container">
-<div class="container-trend">
-  <div class="item-trend">
-    <div class="front">
-      <img src="https://i.pinimg.com/736x/92/cc/d5/92ccd59a9c32f11908030a48b33ccf87.jpg" alt="">
-    </div>
-    <div class="back">
-      <img src="https://i.pinimg.com/736x/b7/95/78/b795782db138506e056942e61dbde1aa.jpg" alt="">
-      <div class="front-icons">
-        <div class="icon">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="icon">
-          <i class="far fa-heart"></i>
-        </div>
-        <div class="icon">
-          <i class="fas fa-cart-plus"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="trend-content">
-    <h3>Contemporary Pieces</h3>
-    <span>1000$</span>
-    <span>2000$</span>
-  </div>
-</div> 
+  <div class="podcast-card d-flex rounded-2 mx-auto w-75 " style="  box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+  <div class="item-news  p-4">
+<h3>Podcast Title</h3>
+<i class="fas fa-calendar-alt"></i>
+<span>fri,May25h 2025</span>
+<div class="line rounded-5 mt-2  bg-secondary" style="width: 100px; height: 5px; "></div>
+<p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis vel, tempora repellat excepturi harum labore velit obcaecati! Optio, quos. amet consectetur adipisicing elit. Sequi omnis vel, tempora repellat excepturi harum labore velit obcaecati! Optio, quos.</p>
 
-<div class="container-trend">
-  <div class="item-trend item-trend2">
-    <div class="front">
-      <img src="https://i.pinimg.com/736x/58/8e/f6/588ef6782c19df9afef9eed84297d2c9.jpg" alt="">
-    </div>
-    <div class="back">
-      <img src="https://i.pinimg.com/736x/b4/ca/c7/b4cac7090553fc5fefb915ebf07bde2c.jpg" alt="">
-      <div class="front-icons">
-        <div class="icon">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="icon">
-          <i class="far fa-heart"></i>
-        </div>
-        <div class="icon">
-          <i class="fas fa-cart-plus"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="trend-content">
-    <h3>Contemporary Pieces</h3>
-    <span>1000$</span>
-    <span>2000$</span>
-  </div>
-</div> 
-
-<div class="container-trend">
-  <div class="item-trend">
-    <div class="front">
-      <img src="https://i.pinimg.com/736x/92/cc/d5/92ccd59a9c32f11908030a48b33ccf87.jpg" alt="">
-    </div>
-    <div class="back">
-      <img src="https://i.pinimg.com/736x/b7/95/78/b795782db138506e056942e61dbde1aa.jpg" alt="">
-      <div class="front-icons">
-        <div class="icon">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="icon">
-          <i class="far fa-heart"></i>
-        </div>
-        <div class="icon">
-          <i class="fas fa-cart-plus"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="trend-content">
-    <h3>Contemporary Pieces</h3>
-    <span>1000$</span>
-    <span>2000$</span>
-  </div>
-</div> 
-
-</div><!-- /container trending -->
-
-
-
-
-
-
-
-
-
-
-<div class="customer">
-  <hr>
-  <div class="arrow">
-     <i class="fas fa-chevron-left "></i>
-    <i class="fas fa-chevron-right i2"></i>
-  </div>
-
-  <div class="customer-info">
-    <h2>Customer Testimomial</h2>
-    <p> The quality of the decor pieces exceeded my expectations. The customer service team was incredibly helpful!</p>
-     
-      <div class="designer">
-        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-      <div class="designer-info">
-        <h3>Shahd Ahmed</h3>
-        <p>Desinger at Colorlib</p>
-      </div>
-      </div>
-  </div>
-  <hr>
+<div class="buttons-news d-flex" style="margin-top: 80px;">
+  <button class="btn btn-secondary" type="submit">  <i class="fas fa-microphone-alt"></i> Podcast</button>
+  <button class="btn btn-secondary mx-2" type="submit"><i class="fas fa-clock"></i> 55 mins</button>
+  <button class="btn btn-primary" type="submit"> <i class="fas fa-play"></i> Play Epsode </button>
 </div>
 
-<div class="container-like">
-  <h2 class="like-title">You May Like</h2>
-<div class="like-content">
-  <div class="like-item">
-    <div class="back1">
-      <img src="https://i.pinimg.com/736x/ac/9d/7a/ac9d7aa30ad11c9285e28d92bd99d5c6.jpg" alt="" >
-    </div>
-    <div class="front1">
-    <img src="https://i.pinimg.com/736x/d1/95/03/d195037f6d3e74e4217da2f648702bc9.jpg" alt="" >
   </div>
- 
-    <p>Cashmere Tank</p>
-    <span>1000$</span>
-    <span><del>2000$</del></span>
-  </div><!-- /like-item -->
-  <div class="like-item">
-    <div class="back1">
-      <img src="https://i.pinimg.com/736x/ac/9d/7a/ac9d7aa30ad11c9285e28d92bd99d5c6.jpg" alt="" >
-    </div>
-    <div class="front1">
-    <img src="https://i.pinimg.com/736x/d1/95/03/d195037f6d3e74e4217da2f648702bc9.jpg" alt="" >
-  </div>
-    <p>Cashmere Tank</p>
-    <span>1000$</span>
-    <span><del>2000$</del></span>
-  </div><!-- /like-item -->
+  <img src="https://i.pinimg.com/736x/88/23/a4/8823a47b60addf55afa60829302687d2.jpg" class="img-news img-fluid" style="width: 30%;clip-path: polygon(100% 100%, 100% 0, 15% 0%, 0% 100%)"  >
+</div>
+</div> 
 
 
 
 
-
-
-
-
-
-
-
-  <div class="like-item">
-    <div class="back1">
-      <img src="https://i.pinimg.com/736x/ac/9d/7a/ac9d7aa30ad11c9285e28d92bd99d5c6.jpg" alt="" >
-    </div>
-    <div class="front1">
-    <img src="https://i.pinimg.com/736x/d1/95/03/d195037f6d3e74e4217da2f648702bc9.jpg" alt="" >
-  </div>
- 
-    <p>Cashmere Tank</p>
-    <span>1000$</span>
-    <span><del>2000$</del></span>
-  </div><!-- /like-item -->
-
-
-
-
-
-
-
-
-
-</div><!-- /like-content -->
-
-</div><!-- /container-like -->
- 
-<div class="news">
-  <hr>
-  <h2 class="title-news">Latest News</h2>
-  <div class="container-news">
-    <div class="container-content">
-         <div class="item">
-           <img src="https://i.pinimg.com/736x/04/9c/df/049cdf863573e5e56187641b68f73f7f.jpg" alt="">
-           <p class="p1"> fashion tips</p>
-           <h2>What curling Iron Are The Best Ones</h2>
-           <p>Consectetur adipisicing elit.Laborum Fuga incidunt laboriosam voluptas iure, delectus..</p>
-           <a href="#">Reead More</a>
-         </div><!-- /item -->
-         <div class="item item2">
-          <img src="https://i.pinimg.com/736x/b9/65/2b/b9652b86cc92e987f685173d6f50abae.jpg" alt="">
-          <p class="p1"> fashion tips</p>
-          <h2>What curling Iron Are The Best Ones</h2>
-          <p>Consectetur adipisicing elit.Laborum Fuga incidunt laboriosam voluptas iure, delectus..</p>
-          <a href="#">Reead More</a>
-        </div><!-- /item -->
-        <div class="item">
-          <img src="https://i.pinimg.com/736x/50/c2/3f/50c23f9e512aec99707b9e7d54e39935.jpg" alt="">
-          <p class="p1"> fashion tips</p>
-          <h2>What curling Iron Are The Best Ones</h2>
-          <p>Consectetur adipisicing elit.Laborum Fuga incidunt laboriosam voluptas iure, delectus..</p>
-          <a href="#">Reead More</a>
-        </div><!-- /item -->
-    </div><!-- /container-content -->
-  </div><!-- /container-news -->
-  <hr>
-</div><!-- /news -->
-
-<div class="sec-icons">
-  <div class="sec-icons-content">
-    <div class="sec-icon-item">
-      <div class="icon-container">
-      <i class="fas fa-truck i1"></i>
-      <i class="fas fa-truck i3"></i>
-      </div>
-      <h3>Fast & Free delivery</h3>
-      <p>Free delivery on all orders</p>
-    </div><!-- /sec-icon-item -->
-    <div class="sec-icon-item sec2">
-      <div class="icon-container">
-      <i class="fas fa-money-check-alt i1"></i>
-      <i class="fas fa-money-check-alt i3"></i>
-      </div>
-      <h3>Secure Payment</h3>
-      <p>Free delivery on all orders</p>
-    </div><!-- /sec-icon-item -->
-    <div class="sec-icon-item sec3">
-      <div class="icon-container">
-      <i class="fas fa-money-bill-wave i1"></i>
-      <i class="fas fa-money-bill-wave i3"></i>
-      </div>
-      <h3>Money Back Gurantee</h3>
-      <p>Free delivery on all orders</p>
-    </div><!-- /sec-icon-item -->
-    <div class="sec-icon-item">
-      <div class="icon-container">
-      <i class="fas fa-user-clock i1"></i>
-      <i class="fas fa-user-clock i3"></i>
-    </div>
-      <h3>Online support</h3>
-      <p>Free delivery on all orders</p>
-    </div><!-- /sec-icon-item -->
-
-  </div><!-- /sec-icons-content -->
-
-</div><!-- /sec-icons -->
-
-
-<div class="footer">
-  <div class="subscribe">
-    <div class="sub-p">
-    <p class="p1">Subscribe Newsltter</p>
-    <p class="p2">subscribe Newsltter to get 5% on all products.</p>
-  </div>
-  <div class="sub-form">
-     <input type="email" value="Enter your Email">
-     <button>Subscribe</button>
-    </div>
-    <div class="sub-icons">
+<!-- <div class="container">
+  <div class="podcast-card d-flex  flex-lg-row rounded-2 mx-auto col-lg-8 col-md-10 col-12 p-4 shadow-lg w-75">
     
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-instagram-square"></i>
-      <i class="fab fa-youtube"></i>
+    <div class="item-news p-4 flex-grow-1">
+      <h3>Podcast Title</h3>
+      <i class="fas fa-calendar-alt"></i>
+      <span>Fri, May 25th 2025</span>
+      <div class="line rounded-5 mt-2 bg-secondary" style="width: 100px; height: 5px;"></div>
+      <p class="mt-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis vel, tempora repellat excepturi harum labore velit obcaecati! Optio, quos. amet consectetur adipisicing elit. Sequi omnis vel, tempora repellat excepturi harum labore velit obcaecati! Optio, quos.      </p>
+
+      <div class="buttons-news d-flex flex-wrap gap-2 mt-5">
+        <button class="btn btn-secondary">  
+          <i class="fas fa-microphone-alt"></i> Podcast
+        </button>
+        <button class="btn btn-secondary">  
+          <i class="fas fa-clock"></i> 55 mins
+        </button>
+        <button class="btn btn-primary">  
+          <i class="fas fa-play"></i> Play Episode
+        </button>
+      </div>
     </div>
-  </div>
-  <hr>
- </div>
-<footer>
-  <div class="footer-logo">
-      <img src="https://i.pinimg.com/736x/c0/64/92/c06492a85d2fceba5c6cf52e2d1c720a.jpg" alt="Logo">
-      <h1>Interior Design</h1>
-  </div>
-  <div class="footer-column">
-      <h3>Shop Men</h3>
-      <ul>
-          <li><a href="#">Clothing Fashion</a></li>
-          <li><a href="#">Winter</a></li>
-          <li><a href="#">Summer</a></li>
-          <li><a href="#">Formal</a></li>
-          <li><a href="#">Casual</a></li>
-      </ul>
-  </div>
-  <div class="footer-column">
-      <h3>Shop Women</h3>
-      <ul>
-          <li><a href="#">Clothing Fashion</a></li>
-          <li><a href="#">Winter</a></li>
-          <li><a href="#">Summer</a></li>
-          <li><a href="#">Formal</a></li>
-          <li><a href="#">Casual</a></li>
-      </ul>
-  </div>
-  <div class="footer-column">
-      <h3>Baby Collection</h3>
-      <ul>
-          <li><a href="#">Clothing Fashion</a></li>
-          <li><a href="#">Winter</a></li>
-          <li><a href="#">Summer</a></li>
-          <li><a href="#">Formal</a></li>
-          <li><a href="#">Casual</a></li>
-      </ul>
-  </div>
-  <div class="footer-column">
-      <h3>Quick Links</h3>
-      <ul>
-          <li><a href="#">Track Your Order</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Carrier</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact Us</a></li>
-      </ul>
-  </div>
-</footer>
-<div class="copy">
-<hr>
-<p class="Copytitle">Copyright &copy; 2025 All Rights reserved | This template is made with <i class="fas fa-heart"></i> By ShahdAhmed </p>
+
+    <img src="https://i.pinimg.com/736x/88/23/a4/8823a47b60addf55afa60829302687d2.jpg" 
+    class="img-news img-fluid" style="width: 30%;clip-path: polygon(100% 100%, 100% 0, 15% 0%, 0% 100%);">
+
+
+</div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container mt-5">
+  <div class="podcast-card d-flex rounded-2 mx-auto w-75 " style="  box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+    <img src="https://i.pinimg.com/736x/34/41/1b/34411bb29f6ff2c2938f50ae9e418b9f.jpg" class="img-news img2 h-100 img-fluid" style="width: 30%; clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+ transition: .5s;">
+  <div class="item-news  p-4">
+<h3>Podcast Title</h3>
+<i class="fas fa-calendar-alt"></i>
+<span>fri,May25h 2025</span>
+<div class="line rounded-5 mt-2  bg-secondary " style="width: 50px; height: 5px; transition: 2s;"></div>
+<p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis vel, tempora repellat excepturi harum labore velit obcaecati! Optio, quos. amet consectetur adipisicing elit. Sequi omnis vel, tempora repellat excepturi harum labore velit obcaecati! Optio, quos.</p>
+
+<div class="buttons-news d-flex" style="margin-top: 80px;">
+  <button class="btn btn-secondary" type="submit">  <i class="fas fa-microphone-alt"></i> Podcast</button>
+  <button class="btn btn-secondary mx-2" type="submit"><i class="fas fa-clock"></i> 55 mins</button>
+  <button class="btn btn-primary" type="submit"> <i class="fas fa-play"></i> Play Epsode </button>
 </div>
 
-</body>
+  </div>
+</div>
+</div>
 
+
+
+<div class="container mt-5">
+  <div class="podcast-card d-flex rounded-2 mx-auto w-75 " style="  box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+  <div class="item-news  p-4">
+<h3>Podcast Title</h3>
+<i class="fas fa-calendar-alt"></i>
+<span>fri,May25h 2025</span>
+<div class="line rounded-5 mt-2  bg-secondary" style="width: 100px; height: 5px; "></div>
+<p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis vel, tempora repellat excepturi harum labore velit obcaecati! Optio, quos. amet consectetur adipisicing elit. Sequi omnis vel, tempora repellat excepturi harum labore velit obcaecati! Optio, quos.</p>
+
+<div class="buttons-news d-flex" style="margin-top: 80px;">
+  <button class="btn btn-secondary" type="submit">  <i class="fas fa-microphone-alt"></i> Podcast</button>
+  <button class="btn btn-secondary mx-2" type="submit"><i class="fas fa-clock"></i> 55 mins</button>
+  <button class="btn btn-primary" type="submit"> <i class="fas fa-play"></i> Play Epsode </button>
+</div>
+
+  </div>
+  <img src="https://i.pinimg.com/736x/60/f3/0c/60f30cdc0f44674a0a2b1e6c2c312f4d.jpg" class="img-news img-fluid" style="width: 30%;clip-path: polygon(0 0, 100% 0%, 100% 100%, 16% 100%);">
+</div>
+</div>
+
+<div class="container mt-5">
+  <div class="podcast-card d-flex rounded-2 mx-auto w-75 " style="  box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+    <img src="https://i.pinimg.com/736x/5c/86/01/5c8601eb71c8233885f0286b5f33c628.jpg" class="img-news img2 h-100 img-fluid" style="width: 30%; clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+ transition: .5s;">
+  <div class="item-news  p-4">
+<h3>Podcast Title</h3>
+<i class="fas fa-calendar-alt"></i>
+<span>fri,May25h 2025</span>
+<div class="line rounded-5 mt-2  bg-secondary " style="width: 50px; height: 5px; transition: 2s;"></div>
+<p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis vel, tempora repellat excepturi harum labore velit obcaecati! Optio, quos. amet consectetur adipisicing elit. Sequi omnis vel, tempora repellat excepturi harum labore velit obcaecati! Optio, quos.</p>
+
+<div class="buttons-news d-flex" style="margin-top: 80px;">
+  <button class="btn btn-secondary" type="submit">  <i class="fas fa-microphone-alt"></i> Podcast</button>
+  <button class="btn btn-secondary mx-2" type="submit"><i class="fas fa-clock"></i> 55 mins</button>
+  <button class="btn btn-primary" type="submit"> <i class="fas fa-play"></i> Play Epsode </button>
+</div>
+
+  </div>
+</div>
+</div>
+
+
+
+<h2 class="text-center  thanks join " style="margin-top: 150px;">JOIN US</h2>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-3 col-md-6 col-12 mb-4">
+      <div class="item-join text-center p-4 border rounded shadow-sm">
+        <h2 style="color: #A27B5c;">Subscribe Now</h2>
+        <img src="https://i.pinimg.com/736x/1e/2f/09/1e2f099df6aa116901466813cbaba033.jpg" class="my-4 img-fluid rounded" style="width:130px; height:130px;">
+        <p><a href="#" class="text-decoration-none">Go to link</a></p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-12 mb-4">
+      <div class="item-join text-center p-4 border rounded shadow-sm">
+        <h2 style="color: #A27B5c;">Subscribe Now</h2>
+        <img src="https://i.pinimg.com/736x/61/74/cd/6174cdc8db06b0e052b1a2f1df9c930b.jpg" class="my-4 img-fluid rounded" style="width:130px; height:130px;">
+        <p><a href="#" class="text-decoration-none">Go to link</a></p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-12 mb-4">
+      <div class="item-join text-center p-4 border rounded shadow-sm">
+        <h2 style="color: #A27B5c;">Subscribe Now</h2>
+        <img src="https://i.pinimg.com/736x/c9/5f/0a/c95f0abf5d985f7b094ab35b7b1eaf80.jpg" class="my-4 img-fluid rounded" style="width:130px; height:130px;">
+        <p><a href="#" class="text-decoration-none">Go to link</a></p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-12 mb-4">
+      <div class="item-join text-center p-4 border rounded shadow-sm">
+        <h2 style="color: #A27B5c;">Subscribe Now</h2>
+        <img src="https://i.pinimg.com/736x/92/d1/db/92d1db1521d374335498624cc95e9554.jpg" class="my-4 img-fluid rounded" style="width:130px; height:130px;">
+        <p><a href="#" class="text-decoration-none">Go to link</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer container-fluid  py-5">
+  <div class="horizontal-line">
+    <div class="line-segment"></div>
+</div>
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="footer-section">
+          <div class="footer-logo d-flex align-items-center justify-content-center justify-content-md-start">
+            <img src="https://c8.alamy.com/comp/H60XEB/the-word-egypt-concept-and-theme-painted-in-watercolor-ink-on-a-white-H60XEB.jpg" alt="" class="me-2" style="width: 50px;">
+            <span class="">Good Company</span>
+          </div>
+          <p class="mt-3">Tel: 000-000-000</p>
+          <p>Address: EGYPT</p>
+          <p>Fax: 000-000-000</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="footer-section">
+          <div class="footer-logo d-flex align-items-center justify-content-center justify-content-md-start">
+            <img src="https://c8.alamy.com/comp/H60XEB/the-word-egypt-concept-and-theme-painted-in-watercolor-ink-on-a-white-H60XEB.jpg" alt="" class="me-2" style="width: 50px;">
+            <span class="fw-bold">Important Links</span>
+          </div>
+          <p class="mt-3">Visit Us</p>
+          <p>Take a look</p>
+          <p>Your health is more important</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="footer-section">
+          <div class="footer-logo d-flex align-items-center justify-content-center justify-content-md-start">
+            <img src="https://c8.alamy.com/comp/H60XEB/the-word-egypt-concept-and-theme-painted-in-watercolor-ink-on-a-white-H60XEB.jpg" alt="" class="me-2" style="width: 50px;">
+            <span class="fw-bold">Vision</span>
+          </div>
+          <p class="mt-3">Services for all</p>
+          <p>Provide best services</p>
+          <p>You will be better than before</p>
+        </div>
+      </div>
+
+    </div> 
+  </div>
+  <div class="horizontal-line">
+    <div class="line-segment"></div>
+</div>
+<div class="text-center">
+  <p class="mt-">COPYRIGHT © 2020 SHAHD AHMED. GOOD COMPANY. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
